@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase,
   title: {
     default: siteConfig.title,
-    template: "%s | Café Aurora"
+    template: `%s | ${siteConfig.shortName}`
   },
   description: siteConfig.description,
   keywords: [
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     "cafeteria local",
     "landing page cafeteria"
   ],
-  authors: [{ name: "Café Aurora" }],
-  creator: "Café Aurora",
+  authors: [{ name: siteConfig.name }],
+  creator: siteConfig.name,
   alternates: {
     canonical: "/"
   },
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Café Aurora - Cafeteria Premium"
+        alt: `${siteConfig.name} - Cafeteria Boutique em Bauru`
       }
     ]
   },

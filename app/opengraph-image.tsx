@@ -42,15 +42,15 @@ export default function OpengraphImage() {
             textTransform: "uppercase"
           }}
         >
-          Café Aurora
+          Ateliê Aurora Café · Bauru
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 24, maxWidth: 920 }}>
-          <div style={{ fontSize: 76, lineHeight: 1.05, fontWeight: 700 }}>
-            Cafés especiais, brunch artesanal e ambiente acolhedor
+          <div style={{ fontSize: 72, lineHeight: 1.05, fontWeight: 700 }}>
+            Cafeteria boutique com cafés especiais, brunch brasileiro e atmosfera autoral
           </div>
-          <div style={{ fontSize: 33, lineHeight: 1.3, color: "#6f6258" }}>
-            Template premium para cafeterias locais, pronto para apresentação comercial.
+          <div style={{ fontSize: 32, lineHeight: 1.3, color: "#6f6258" }}>
+            Um espaço elegante no Centro de Bauru para encontros, trabalho e boas pausas.
           </div>
         </div>
       </div>

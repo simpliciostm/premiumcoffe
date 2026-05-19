@@ -9,12 +9,42 @@ type MenuItem = {
 };
 
 const menuItems: MenuItem[] = [
-  { name: "Espresso Aurora", description: "Dose dupla com notas de chocolate e nozes.", price: "R$ 9", category: "Café" },
-  { name: "Cappuccino Cremoso", description: "Leite vaporizado e final com canela suave.", price: "R$ 14", category: "Café" },
-  { name: "Latte Baunilha", description: "Café espresso, leite e toque natural de baunilha.", price: "R$ 16", category: "Especial" },
-  { name: "Toast Mediterrâneo", description: "Pão artesanal, ricota temperada e tomate confit.", price: "R$ 24", category: "Brunch" },
-  { name: "Croissant de Amêndoas", description: "Massa folhada amanteigada e creme de amêndoas.", price: "R$ 18", category: "Padaria" },
-  { name: "Cheesecake da Casa", description: "Base crocante e calda de frutas vermelhas.", price: "R$ 19", category: "Sobremesa" }
+  {
+    name: "Café Coado do Dia",
+    description: "Filtrado em V60 com grão fresco e perfil sensorial da semana.",
+    price: "R$ 12",
+    category: "Café"
+  },
+  {
+    name: "Pingado Cremoso",
+    description: "Espresso curto com leite vaporizado na medida certa.",
+    price: "R$ 10",
+    category: "Clássicos"
+  },
+  {
+    name: "Pão de Queijo da Casa",
+    description: "Unidade grande, casquinha crocante e interior macio.",
+    price: "R$ 11",
+    category: "Padaria"
+  },
+  {
+    name: "Tostado de Queijo Canastra",
+    description: "Pão de fermentação natural, queijo canastra e tomate assado.",
+    price: "R$ 29",
+    category: "Brunch"
+  },
+  {
+    name: "Bolo de Fubá com Goiabada",
+    description: "Receita artesanal servida em fatia generosa.",
+    price: "R$ 16",
+    category: "Confeitaria"
+  },
+  {
+    name: "Cuscuz Paulista de Brunch",
+    description: "Versão leve e autoral com ovos cremosos e saladinha fresca.",
+    price: "R$ 34",
+    category: "Especial"
+  }
 ];
 
 export function MenuPreview() {
@@ -24,8 +54,8 @@ export function MenuPreview() {
         <MotionReveal>
           <SectionIntro
             eyebrow="Cardápio"
-            title="Sabores autorais para todos os momentos"
-            description="Uma prévia dos favoritos da casa. Você pode adaptar este bloco com os produtos e preços reais da cafeteria."
+            title="Sabores brasileiros com execução de cafeteria boutique"
+            description="Itens pensados para a rotina da cidade: café bem tirado, brunch equilibrado e vitrine artesanal feita todos os dias."
           />
         </MotionReveal>
 

@@ -4,27 +4,27 @@ import { SectionIntro } from "@/components/ui/section-intro";
 
 const galleryItems = [
   {
-    title: "Balcão principal",
-    image: "/images/gallery-1.svg",
-    description: "Texturas quentes e atendimento próximo.",
+    title: "Balcão e vitrine",
+    image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80",
+    description: "Atendimento próximo e vitrine fresca ao longo do dia.",
     sizes: "(max-width: 768px) 100vw, 48vw"
   },
   {
     title: "Mesa de brunch",
-    image: "/images/gallery-2.svg",
-    description: "Pratos autorais com apresentação leve.",
+    image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=80",
+    description: "Composição equilibrada para manhãs tranquilas em Bauru.",
     sizes: "(max-width: 768px) 100vw, 48vw"
   },
   {
-    title: "Cantinho de leitura",
-    image: "/images/gallery-3.svg",
-    description: "Luz suave para uma pausa tranquila.",
+    title: "Cafés e métodos",
+    image: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1600&q=80",
+    description: "Extrações cuidadosas com foco em sabor e consistência.",
     sizes: "(max-width: 768px) 100vw, 48vw"
   },
   {
-    title: "Bar de métodos",
-    image: "/images/gallery-4.svg",
-    description: "Extrações feitas com técnica e cuidado.",
+    title: "Ambiente boutique",
+    image: "https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=1600&q=80",
+    description: "Espaço acolhedor para trabalho, encontros e pausa.",
     sizes: "(max-width: 768px) 100vw, 48vw"
   }
 ];
@@ -35,9 +35,9 @@ export function Gallery() {
       <div className="container-shell">
         <MotionReveal>
           <SectionIntro
-            eyebrow="Galeria"
-            title="Um ambiente pensado para acolher"
-            description="Substitua estes placeholders por fotos reais do espaço, equipe e pratos para aumentar a conversão da página."
+            eyebrow="Ambiente"
+            title="Uma casa elegante para viver o café com calma"
+            description="Seleção visual inspirada no clima de uma cafeteria boutique real, com atmosfera acolhedora e contemporânea."
           />
         </MotionReveal>
 

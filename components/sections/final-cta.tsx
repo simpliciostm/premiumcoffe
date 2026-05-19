@@ -8,12 +8,12 @@ export function FinalCta() {
       <MotionReveal className="container-shell overflow-hidden rounded-[2rem] border border-aurora-earth/70 bg-aurora-coffee p-8 text-aurora-offwhite shadow-soft sm:p-11">
         <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-aurora-beige">Reserve seu momento</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-aurora-beige">Atendimento Boutique</p>
             <h2 className="mt-3 max-w-2xl font-display text-[2rem] leading-[1.08] sm:text-[2.55rem]">
-              Pronto para transformar sua cafeteria em uma vitrine premium?
+              Faça sua reserva e conheça o ritmo do café bem servido em Bauru.
             </h2>
             <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[#f4ead9] sm:text-base">
-              Este layout foi pensado para apresentar sua marca com clareza e sofisticação. Personalize textos, fotos e links para publicar rapidamente.
+              Nossa equipe responde rápido no WhatsApp para reservas, encomendas e eventos intimistas.
             </p>
           </div>
 
@@ -25,7 +25,7 @@ export function FinalCta() {
               className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-aurora-beige px-7 py-3.5 text-sm font-semibold text-aurora-coffee transition duration-300 hover:-translate-y-0.5 hover:bg-[#efdfca] sm:w-auto"
             >
               <MessageCircle className="h-4 w-4" />
-              Falar no WhatsApp
+              Falar com a equipe
             </a>
           </div>
         </div>

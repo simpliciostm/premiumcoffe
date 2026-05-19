@@ -2,13 +2,14 @@
 
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { siteConfig } from "@/lib/site-config";
 
 const navLinks = [
-  { href: "#sobre", label: "Sobre" },
-  { href: "#diferenciais", label: "Diferenciais" },
+  { href: "#sobre", label: "Nossa Casa" },
+  { href: "#diferenciais", label: "Experiência" },
   { href: "#cardapio", label: "Cardápio" },
-  { href: "#galeria", label: "Galeria" },
-  { href: "#localizacao", label: "Localização" }
+  { href: "#galeria", label: "Ambiente" },
+  { href: "#localizacao", label: "Bauru" }
 ];
 
 export function Header() {
@@ -17,8 +18,8 @@ export function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-aurora-earth/60 bg-aurora-offwhite/88 shadow-[0_8px_24px_rgba(47,36,29,0.08)] backdrop-blur-md">
       <div className="container-shell flex items-center justify-between py-3">
-        <a href="#inicio" className="font-display text-[1.7rem] leading-none tracking-wide text-aurora-coffee" aria-label="Ir para o início">
-          Café Aurora
+        <a href="#inicio" className="font-display text-[1.5rem] leading-none tracking-wide text-aurora-coffee sm:text-[1.65rem]" aria-label="Ir para o início">
+          {siteConfig.shortName}
         </a>
 
         <button

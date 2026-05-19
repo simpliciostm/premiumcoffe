@@ -4,23 +4,23 @@ import { SectionIntro } from "@/components/ui/section-intro";
 
 const features = [
   {
-    title: "Cafés especiais",
-    description: "Extrações precisas em espresso e métodos filtrados com grãos sazonais.",
+    title: "Cafés de microtorrefação",
+    description: "Grãos sazonais com perfil sensorial claro e extração consistente.",
     icon: Coffee
   },
   {
-    title: "Doces artesanais",
-    description: "Bolos, cookies e tortas de produção própria com ingredientes selecionados.",
+    title: "Confeitaria artesanal",
+    description: "Receitas de vitrine produzidas em pequenos lotes todos os dias.",
     icon: Croissant
   },
   {
-    title: "Brunch",
-    description: "Combinações equilibradas para manhãs tranquilas e encontros de fim de semana.",
+    title: "Brunch brasileiro",
+    description: "Combinações que valorizam ingredientes e sabores do nosso cotidiano.",
     icon: Leaf
   },
   {
-    title: "Ambiente aconchegante",
-    description: "Espaço confortável para conversar, trabalhar e aproveitar sem pressa.",
+    title: "Ambiente boutique",
+    description: "Conforto, música na medida certa e atmosfera pensada para ficar.",
     icon: Sofa
   }
 ];
@@ -31,9 +31,9 @@ export function Features() {
       <div className="container-shell">
         <MotionReveal>
           <SectionIntro
-            eyebrow="Diferenciais"
-            title="Tudo pensado para uma experiência completa"
-            description="Combinamos técnica, hospitalidade e atmosfera para transformar o café de todos os dias em um momento especial."
+            eyebrow="Experiência"
+            title="Por que clientes voltam ao Ateliê Aurora"
+            description="Mais do que servir café, criamos uma rotina de qualidade para quem busca um lugar confiável em Bauru."
           />
         </MotionReveal>
 

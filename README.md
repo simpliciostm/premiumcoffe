@@ -1,6 +1,6 @@
-# Café Aurora - Landing Page Premium
+# Ateliê Aurora Café - Landing Page Boutique
 
-Template comercial para cafeterias locais com foco em apresentação, conversão e deploy rápido.
+Template comercial inspirado em uma cafeteria real de Bauru, com linguagem mais próxima de marca local e foco em conversão.
 
 ## Stack
 
@@ -17,7 +17,7 @@ Template comercial para cafeterias locais com foco em apresentação, conversão
 - Favicon configurado
 - Botão flutuante de WhatsApp
 - Links de WhatsApp e Instagram centralizados e configuráveis
-- Imagens otimizadas com `next/image`
+- Imagens otimizadas com `next/image` (hero e galeria)
 
 ## Desenvolvimento local
 
@@ -41,34 +41,26 @@ Crie um arquivo `.env.local` na raiz:
 
 ```env
 NEXT_PUBLIC_SITE_URL=https://seu-dominio.com
-NEXT_PUBLIC_WHATSAPP_NUMBER=5511999999999
+NEXT_PUBLIC_WHATSAPP_NUMBER=5514999999999
 NEXT_PUBLIC_INSTAGRAM_URL=https://instagram.com/seuinstagram
 ```
 
 Observações:
 - `NEXT_PUBLIC_WHATSAPP_NUMBER`: use apenas números com DDI e DDD.
-- Esses valores são usados em SEO, Open Graph e botões de contato.
+- Esses valores alimentam SEO, Open Graph e botões de contato.
 
 ## Deploy na Netlify
 
-### Opção recomendada (com suporte completo para Next.js)
-
 1. Conecte o repositório na Netlify.
-2. Em **Project configuration**:
+2. Configure:
    - Build command: `npm run build`
    - Publish directory: `.next`
-3. Adicione as variáveis de ambiente:
+3. Adicione variáveis de ambiente:
    - `NEXT_PUBLIC_SITE_URL`
    - `NEXT_PUBLIC_WHATSAPP_NUMBER`
    - `NEXT_PUBLIC_INSTAGRAM_URL`
-4. Ative o runtime/plugin de Next.js da Netlify (quando sugerido pela plataforma).
+4. Ative o runtime/plugin de Next.js da Netlify quando a plataforma sugerir.
 5. Faça o deploy.
-
-### Checklist pós-deploy
-
-1. Abra a URL publicada e valide os links de WhatsApp/Instagram.
-2. Teste compartilhamento no WhatsApp para confirmar o card Open Graph.
-3. Rode Lighthouse para checar performance e acessibilidade.
 
 ## Estrutura do projeto
 
@@ -97,5 +89,4 @@ lib/
   site-config.ts
 public/
   favicon.svg
-  images/
 ```
