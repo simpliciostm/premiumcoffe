@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Xícara de café em mesa de madeira">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#efe1cb"/>
+      <stop offset="100%" stop-color="#c8a27b"/>
+    </linearGradient>
+    <radialGradient id="light" cx="0.25" cy="0.2" r="0.65">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.58"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect width="1200" height="900" fill="url(#light)"/>
+  <ellipse cx="610" cy="560" rx="280" ry="80" fill="#7a5a40" opacity="0.24"/>
+  <circle cx="600" cy="470" r="210" fill="#faf6ef"/>
+  <circle cx="600" cy="470" r="165" fill="#5f4130"/>
+  <circle cx="600" cy="470" r="130" fill="#6d4c38"/>
+  <path d="M790 390c88 0 132 158 12 220-30 15-66 15-102 5" fill="none" stroke="#f6efe4" stroke-width="46" stroke-linecap="round"/>
+  <path d="M470 300c-16 16-15 35 2 53M560 255c-16 16-15 35 2 53M650 300c-16 16-15 35 2 53" fill="none" stroke="#f5e9d8" stroke-width="11" stroke-linecap="round" opacity="0.8"/>
+</svg>

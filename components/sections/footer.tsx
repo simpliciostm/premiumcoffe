@@ -1,8 +1,9 @@
 import { Instagram, MapPin, MessageCircle } from "lucide-react";
+import { contactLinks } from "@/lib/site-config";
 
 const socialLinks = [
-  { label: "Instagram", href: "https://instagram.com", icon: Instagram },
-  { label: "WhatsApp", href: "https://wa.me/5500000000000", icon: MessageCircle }
+  { label: "Instagram", href: contactLinks.instagram, icon: Instagram },
+  { label: "WhatsApp", href: contactLinks.whatsappInfo, icon: MessageCircle }
 ];
 
 export function Footer() {

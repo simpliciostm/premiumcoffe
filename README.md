@@ -1,6 +1,8 @@
 # Café Aurora - Landing Page Premium
 
-Template comercial de landing page para cafeterias locais, desenvolvido com:
+Template comercial para cafeterias locais com foco em apresentação, conversão e deploy rápido.
+
+## Stack
 
 - Next.js (App Router)
 - TypeScript
@@ -8,14 +10,23 @@ Template comercial de landing page para cafeterias locais, desenvolvido com:
 - Framer Motion
 - Lucide React
 
-## Como rodar localmente
+## Funcionalidades comerciais
+
+- SEO completo (`title`, `description`, `keywords`, canonical)
+- Open Graph otimizado para compartilhamento no WhatsApp
+- Favicon configurado
+- Botão flutuante de WhatsApp
+- Links de WhatsApp e Instagram centralizados e configuráveis
+- Imagens otimizadas com `next/image`
+
+## Desenvolvimento local
 
 ```bash
 npm install
 npm run dev
 ```
 
-Abra `http://localhost:3000`.
+Acesse `http://localhost:3000`.
 
 ## Build de produção
 
@@ -24,25 +35,48 @@ npm run build
 npm start
 ```
 
-## Deploy
+## Variáveis de ambiente
 
-### Vercel
-1. Conecte o repositório na Vercel.
-2. Framework detectado automaticamente: `Next.js`.
-3. Deploy padrão.
+Crie um arquivo `.env.local` na raiz:
 
-### Netlify
+```env
+NEXT_PUBLIC_SITE_URL=https://seu-dominio.com
+NEXT_PUBLIC_WHATSAPP_NUMBER=5511999999999
+NEXT_PUBLIC_INSTAGRAM_URL=https://instagram.com/seuinstagram
+```
+
+Observações:
+- `NEXT_PUBLIC_WHATSAPP_NUMBER`: use apenas números com DDI e DDD.
+- Esses valores são usados em SEO, Open Graph e botões de contato.
+
+## Deploy na Netlify
+
+### Opção recomendada (com suporte completo para Next.js)
+
 1. Conecte o repositório na Netlify.
-2. Build command: `npm run build`
-3. Publish directory: `.next`
-4. Recomendado usar o plugin oficial da Netlify para Next.js.
+2. Em **Project configuration**:
+   - Build command: `npm run build`
+   - Publish directory: `.next`
+3. Adicione as variáveis de ambiente:
+   - `NEXT_PUBLIC_SITE_URL`
+   - `NEXT_PUBLIC_WHATSAPP_NUMBER`
+   - `NEXT_PUBLIC_INSTAGRAM_URL`
+4. Ative o runtime/plugin de Next.js da Netlify (quando sugerido pela plataforma).
+5. Faça o deploy.
 
-## Estrutura
+### Checklist pós-deploy
+
+1. Abra a URL publicada e valide os links de WhatsApp/Instagram.
+2. Teste compartilhamento no WhatsApp para confirmar o card Open Graph.
+3. Rode Lighthouse para checar performance e acessibilidade.
+
+## Estrutura do projeto
 
 ```text
 app/
   globals.css
   layout.tsx
+  opengraph-image.tsx
   page.tsx
 components/
   sections/
@@ -58,11 +92,10 @@ components/
   ui/
     motion-reveal.tsx
     section-intro.tsx
+    whatsapp-floating-button.tsx
+lib/
+  site-config.ts
+public/
+  favicon.svg
+  images/
 ```
-
-## Personalização rápida
-
-- Atualize os links de WhatsApp nos componentes `hero.tsx`, `final-cta.tsx` e `footer.tsx`.
-- Troque placeholders da galeria por fotos reais.
-- Ajuste cores no `app/globals.css` (variáveis CSS).
-- Atualize itens e preços em `menu-preview.tsx`.

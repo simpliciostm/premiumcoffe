@@ -1,7 +1,6 @@
 import { MessageCircle } from "lucide-react";
 import { MotionReveal } from "@/components/ui/motion-reveal";
-
-const whatsappLink = "https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Caf%C3%A9%20Aurora";
+import { contactLinks } from "@/lib/site-config";
 
 export function FinalCta() {
   return (
@@ -19,7 +18,12 @@ export function FinalCta() {
           </div>
 
           <div className="lg:justify-self-end">
-            <a href={whatsappLink} target="_blank" rel="noreferrer" className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-aurora-beige px-7 py-3.5 text-sm font-semibold text-aurora-coffee transition duration-300 hover:-translate-y-0.5 hover:bg-[#efdfca] sm:w-auto">
+            <a
+              href={contactLinks.whatsappInfo}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-aurora-beige px-7 py-3.5 text-sm font-semibold text-aurora-coffee transition duration-300 hover:-translate-y-0.5 hover:bg-[#efdfca] sm:w-auto"
+            >
               <MessageCircle className="h-4 w-4" />
               Falar no WhatsApp
             </a>

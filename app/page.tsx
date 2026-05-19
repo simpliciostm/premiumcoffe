@@ -7,6 +7,7 @@ import { Header } from "@/components/sections/header";
 import { Hero } from "@/components/sections/hero";
 import { LocationHours } from "@/components/sections/location-hours";
 import { MenuPreview } from "@/components/sections/menu-preview";
+import { WhatsAppFloatingButton } from "@/components/ui/whatsapp-floating-button";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <FinalCta />
       </main>
       <Footer />
+      <WhatsAppFloatingButton />
     </div>
   );
 }

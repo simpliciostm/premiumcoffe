@@ -1,7 +1,7 @@
+import Image from "next/image";
 import { ArrowRight, Coffee, MessageCircle } from "lucide-react";
 import { MotionReveal } from "@/components/ui/motion-reveal";
-
-const whatsappLink = "https://wa.me/5500000000000?text=Ol%C3%A1%2C%20quero%20reservar%20uma%20mesa%20no%20Caf%C3%A9%20Aurora";
+import { contactLinks } from "@/lib/site-config";
 
 export function Hero() {
   return (
@@ -19,7 +19,7 @@ export function Hero() {
             No Café Aurora, cada xícara é preparada com grãos selecionados e cuidado em cada detalhe para transformar sua pausa em um momento especial.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <a href={whatsappLink} target="_blank" rel="noreferrer" className="btn-primary w-full sm:w-auto">
+            <a href={contactLinks.whatsappReservation} target="_blank" rel="noreferrer" className="btn-primary w-full sm:w-auto">
               <MessageCircle className="h-4 w-4" />
               Falar no WhatsApp
             </a>
@@ -34,12 +34,20 @@ export function Hero() {
           <div className="relative overflow-hidden rounded-[2rem] border border-aurora-earth/70 bg-gradient-to-br from-aurora-beige via-[#ebddca] to-[#d4b798] p-6 shadow-soft sm:p-8">
             <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-aurora-olive/18" />
             <div className="absolute -bottom-10 -left-10 h-36 w-36 rounded-full bg-aurora-coffee/14" />
+
             <div className="relative space-y-5">
-              <div className="rounded-3xl border border-white/70 bg-white/78 p-5 backdrop-blur">
-                <p className="text-xs uppercase tracking-[0.2em] text-aurora-muted">Blend da casa</p>
-                <p className="mt-2 font-display text-3xl text-aurora-coffee sm:text-[2.15rem]">Aurora Signature</p>
-                <p className="mt-3 text-sm text-aurora-muted">Gotas de caramelo, chocolate amargo e final aveludado.</p>
+              <div className="overflow-hidden rounded-3xl border border-white/70 shadow-[0_8px_28px_rgba(47,36,29,0.1)]">
+                <Image
+                  src="/images/hero-coffee.svg"
+                  alt="Xícara de café especial do Café Aurora"
+                  width={1200}
+                  height={900}
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 46vw"
+                  className="h-56 w-full object-cover sm:h-64"
+                />
               </div>
+
               <div className="grid grid-cols-2 gap-3 sm:gap-4">
                 <div className="rounded-2xl border border-white/70 bg-white/80 p-4">
                   <p className="text-2xl font-semibold text-aurora-coffee">+40</p>
