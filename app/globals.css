@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --aurora-olive: #6b7553;
+  --aurora-beige: #e9dcc9;
+  --aurora-coffee: #4a3426;
+  --aurora-offwhite: #fbf7f1;
+  --aurora-earth: #ccb399;
+  --aurora-text: #2f241d;
+  --aurora-muted: #6f6258;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--aurora-text);
+  background:
+    radial-gradient(circle at 5% 10%, rgba(233, 220, 201, 0.35), transparent 26%),
+    radial-gradient(circle at 92% 85%, rgba(204, 179, 153, 0.28), transparent 28%),
+    var(--aurora-offwhite);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--aurora-olive);
+  outline-offset: 3px;
+}
+
+.font-display {
+  font-family: var(--font-display), serif;
+}
+
+.font-body {
+  font-family: var(--font-body), sans-serif;
+}
+
+@layer components {
+  .section-shell {
+    @apply px-4 py-16 sm:px-6 sm:py-20 lg:px-8;
+  }
+
+  .container-shell {
+    @apply mx-auto max-w-6xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-aurora-coffee px-6 py-3 text-sm font-semibold text-aurora-offwhite shadow-soft transition duration-300 hover:-translate-y-0.5 hover:bg-[#3a271c];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-aurora-earth bg-white/95 px-6 py-3 text-sm font-semibold text-aurora-coffee transition duration-300 hover:-translate-y-0.5 hover:bg-aurora-beige;
+  }
+}
